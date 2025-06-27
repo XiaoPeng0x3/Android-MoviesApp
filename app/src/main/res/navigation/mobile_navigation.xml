@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.moveshare.ui.MovieListFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/nav_new"
+        android:name="com.example.moveshare.ui.NewMoviesFragment"
+        android:label="@string/menu_new"
+        tools:layout="@layout/fragment_new_movies" />
+    <fragment
+        android:id="@+id/nav_coming"
+        android:name="com.example.moveshare.ui.ComingMoviesFragment"
+        android:label="@string/menu_coming"
+        tools:layout="@layout/fragment_coming_movies" />
+    <fragment
+        android:id="@+id/nav_top25"
+        android:name="com.example.moveshare.ui.Top25Fragment"
+        android:label="@string/menu_top25"
+        tools:layout="@layout/fragment_top25" />
+    <fragment
+        android:id="@+id/nav_collect"
+        android:name="com.example.moveshare.ui.CollectFragment"
+        android:label="@string/menu_collect"
+        tools:layout="@layout/fragment_collect" />
+    <fragment
+        android:id="@+id/nav_setting"
+        android:name="com.example.moveshare.ui.SettingsFragment"
+        android:label="@string/menu_settings"
+        tools:layout="@layout/fragment_settings" />
+</navigation>
